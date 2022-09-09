@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: "Inter";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: hsla(0, 0%, 99%, 1);
+  list-style: none;
+  width: 98%;
+  margin: 0 auto;
+}
+body {
+  background-color: hsla(0, 0%, 11%, 1);
+}
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+header li {
+  transition: 0.2s ease-in-out;
+}
+
+header li:hover {
+  cursor: pointer;
+  color: hsla(238, 99%, 64%, 1);
+  transform: scale(1.2);
+}
+
+header h2 {
+  font-weight: 500;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.main-text h1 {
+  font-size: 6em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-text h2 {
+  color: hsla(238, 99%, 64%, 1);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tech-img img {
+  max-width: 600px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 0.6em;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.core-tech {
+  width: 70%;
+  background-color: black;
+}
+
+.core-tech li {
+  background-color: hsla(238, 99%, 64%, 1);
+  margin: 10px 0px;
+  padding: 10px 10px;
+  border-radius: 0.7em;
+  text-align: center;
+  /* max-width: 150px; */
+  width: 60%;
+  max-width: 200px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.partners {
+  display: flex;
+  height: 90%;
+}
+
+.partners img {
+  width: 100px;
+}
+
+.partners-box {
+  display: flex;
+  align-items: center;
+}
+
+.partners-box div {
+  width: fit-content;
+}
+
+/* MEDIA QUERIES */
+
+/* MODE TABLETTE */
+@media screen and (max-width: 768px) {
+  header h2 {
+    width: 30%;
+  }
+
+  header ul {
+    width: 100%;
+  }
+  .main-text h1 {
+    font-size: 3em;
+  }
+
+  .main-text h2 {
+    font-size: 1.3em;
+  }
+
+  .core-tech h2 {
+    font-size: 1.4em;
+  }
+  .core-tech li {
+    margin: 10px 20px;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  .main-section img {
+    margin-top: 50px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .core-tech {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .core-tech ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .investors {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .investors h2,
+  .core-tech h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .partners-box {
+    flex-direction: column;
+  }
+
+  .partners-box div {
+    margin-bottom: 40px;
+  }
+
+  .partners-box div:last-child {
+    margin: 0;
+  }
+
+  .partners-box img {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .main-text h1 {
+    font-size: 2.4em;
+  }
+
+  .main-text h2 {
+    font-size: 1.3em;
+  }
+
+  .main-text p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header ul {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
